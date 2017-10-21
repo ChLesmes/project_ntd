@@ -6,7 +6,12 @@ import co.konrad.project1.ntd.entities.EnvioEntity;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
-
+/**
+ * DTO para el mapeo objeto relacional de la entidad Cliente
+ *
+ * @author Dairo, Fabian, Cristian
+ * 
+ */
 public class ClienteDTO {
     
     private Long id;
@@ -41,6 +46,12 @@ public class ClienteDTO {
     
     private CarritoEntity carrito;
 
+    /**
+     * Constructor
+     *
+     * @param cliente
+     */
+    
     public ClienteDTO(ClienteEntity cliente) {
         this.id = cliente.getId();
         this.tipoDocumento = cliente.getTipoDocumento();

@@ -21,18 +21,18 @@ public class ComentarioProductoEntity implements Serializable{
      * llave primaria del comentario
      */
     @Id
-    @Column(name="id_comentario", unique=true)
+    @Column(name="id_comentario")
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     /**
      * comentarios del usuario hacia el producto
      */
-    @Column(name="comentario_comentario", unique=false)
+    @Column(name="comentario_comentario")
     private String comentario;
     /**
      * valoracion del comentario
      */
-    @Column(name="valoracion_comentario", unique=false)
+    @Column(name="valoracion_comentario")
     private int valoracion;
 
     public Long getId() {

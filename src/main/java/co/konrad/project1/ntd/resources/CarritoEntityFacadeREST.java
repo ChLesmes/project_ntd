@@ -21,11 +21,14 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
 /**
- *
- * @author Dairo
+ * 
+ * @author Dairo, Fabian, Cristian
+ * 
  */
 @Stateless
 @Path("co.konrad.project1.ntd.entities.carritoentity")
+@Produces(MediaType.APPLICATION_JSON)
+@Consumes(MediaType.APPLICATION_JSON)
 public class CarritoEntityFacadeREST extends AbstractFacade<CarritoEntity> {
 
     @PersistenceContext(unitName = "Project1-NTDPU")

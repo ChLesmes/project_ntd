@@ -25,6 +25,12 @@ public class FacturaDTO {
     
     private MetodoPagoEntity metodoPago;
 
+    
+    /**
+     * Constructor
+     *
+     * @param factura
+     */
     public FacturaDTO(FacturaEntity factura) {
         this.id = factura.getId();
         this.fecha = factura.getFecha();
@@ -50,6 +56,11 @@ public class FacturaDTO {
         return listaFactura;
     }
     
+    /**
+     * Metodos get y est de la entidad Factura
+     *
+     * @return
+     */
     
     public Long getId() {
         return id;

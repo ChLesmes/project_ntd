@@ -10,8 +10,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * DTO para el mapeo objeto relacional de la entidad ComentarioProducto
  *
- * @author Dairo
+ * @author Dairo, Fabian, Cristian
+ * 
  */
 public class ComentarioProductoDTO {
     
@@ -21,6 +23,11 @@ public class ComentarioProductoDTO {
     
     private int valoracion;
 
+    /**
+     * Constructor
+     *
+     * @param comentarioProducto
+     */
     public ComentarioProductoDTO(ComentarioProductoEntity comentarioProducto) {
         this.id = comentarioProducto.getId();
         this.comentario = comentarioProducto.getComentario();
@@ -44,7 +51,11 @@ public class ComentarioProductoDTO {
         return listaComentario;
     }
     
-    
+    /**
+     * Metodos get y est de la entidad ComentarioProducto
+     *
+     * @return
+     */
     
     public Long getId() {
         return id;

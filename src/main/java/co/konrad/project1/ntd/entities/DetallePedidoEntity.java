@@ -22,7 +22,7 @@ public class DetallePedidoEntity implements Serializable{
      * llave primaria del pedido
      */
     @Id
-    @Column(name="id_pedido", unique=true)
+    @Column(name="id_pedido")
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     /**

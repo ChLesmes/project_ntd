@@ -10,8 +10,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * DTO para el mapeo objeto relacional de la entidad Envio
  *
- * @author Dairo
+ * @author Dairo, Fabian, Cristian
+ * 
  */
 public class EnvioDTO {
     
@@ -23,6 +25,11 @@ public class EnvioDTO {
     
     private String pais;
 
+    /**
+     * Constructor
+     *
+     * @param envio
+     */
     public EnvioDTO(EnvioEntity envio) {
         this.id = envio.getId();
         this.direccion = envio.getDireccion();
@@ -47,7 +54,11 @@ public class EnvioDTO {
         return listaEnvio;
     }
     
-    
+    /**
+     * Metodos get y est de la entidad Envio
+     *
+     * @return
+     */
     
     public Long getId() {
         return id;

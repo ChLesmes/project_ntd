@@ -8,8 +8,10 @@ import co.konrad.project1.ntd.entities.CategoriaEntity;
 import java.util.ArrayList;
 import java.util.List;
 /**
+ * DTO para el mapeo objeto relacional de la entidad Carrrito
  *
- * @author Dairo
+ * @author Dairo, Fabian, Cristian
+ * 
  */
 public class CategoriaDTO {
     
@@ -18,11 +20,16 @@ public class CategoriaDTO {
     private String categoria;
     private String descripcion;
 
-    public CategoriaDTO(CategoriaEntity categorias) {
-        this.id = categorias.getId();
-        this.nombre = categorias.getNombre();
-        this.categoria = categorias.getCategoria();
-        this.descripcion = categorias.getDescripcion();
+    /**
+     * Constructor
+     *
+     * @param categoria
+     */
+    public CategoriaDTO(CategoriaEntity categoria) {
+        this.id = categoria.getId();
+        this.nombre = categoria.getNombre();
+        this.categoria = categoria.getCategoria();
+        this.descripcion = categoria.getDescripcion();
     }
 
     
@@ -44,7 +51,11 @@ public class CategoriaDTO {
         return listaCategoria;
     }
     
-    
+    /**
+     * Metodos get y est de la entidad Categoria
+     *
+     * @return
+     */
     public Long getId() {
         return id;
     }

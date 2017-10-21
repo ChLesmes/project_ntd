@@ -21,7 +21,7 @@ public class PromocionEntity implements Serializable{
      * llave primaria de la promoción
      */
     @Id
-    @Column(name="id_promocion", unique=true)
+    @Column(name="id_promocion")
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     /**

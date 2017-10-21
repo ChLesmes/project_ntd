@@ -23,6 +23,11 @@ public class DetallePedidoDTO {
     private ProductoEntity producto;
     private FacturaEntity factura;
 
+    /**
+     * Constructor
+     *
+     * @param detalle
+     */
     public DetallePedidoDTO(DetallePedidoEntity detalle) {
         this.id = detalle.getId();
         this.fechaPedido = detalle.getFechaPedido();
@@ -49,7 +54,11 @@ public class DetallePedidoDTO {
     }
     
     
-    
+    /**
+     * Metodos get y est de la entidad DetallePedido
+     *
+     * @return
+     */
 
     public Long getId() {
         return id;

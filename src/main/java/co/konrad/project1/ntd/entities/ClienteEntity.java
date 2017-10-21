@@ -22,7 +22,7 @@ public class ClienteEntity implements Serializable{
      * llave primaria del cliente
      */
     @Id
-    @Column(name="id_cliente", unique=true)
+    @Column(name="id_cliente")
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     /**
@@ -53,7 +53,7 @@ public class ClienteEntity implements Serializable{
     /**
      * corréo del cliente
      */
-    @Column(name="email_cliente", unique=true)
+    @Column(name="email_cliente")
     private String email;
     /**
      * fecha de nacimiento del cliente

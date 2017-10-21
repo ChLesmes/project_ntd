@@ -11,8 +11,10 @@ import java.util.Date;
 import java.util.List;
 
 /**
+ * DTO para el mapeo objeto relacional de la entidad MetodoPago
  *
- * @author Dairo
+ * @author Dairo, Fabian, Cristian
+ * 
  */
 public class MetodoPagoDTO {
     
@@ -30,6 +32,11 @@ public class MetodoPagoDTO {
     
     private Long clave;
 
+    /**
+     * Constructor
+     *
+     * @param metodoPago
+     */
     public MetodoPagoDTO(MetodoPagoEntity metodoPago) {
         this.id = metodoPago.getId();
         this.nombre = metodoPago.getNombre();
@@ -60,6 +67,12 @@ public class MetodoPagoDTO {
         }
         return listaMetodo;
     }
+    
+    /**
+     * Metodos get y est de la entidad MetodoPago
+     *
+     * @return
+     */
 
     public Long getId() {
         return id;

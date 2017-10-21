@@ -22,7 +22,7 @@ public class CarritoEntity implements Serializable{
      * llave primaria del carrito de compras
      */
     @Id
-    @Column(name="id_carrito", unique=true)
+    @Column(name="id_carrito")
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     /**

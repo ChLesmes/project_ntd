@@ -23,19 +23,19 @@ public class FacturaEntity implements Serializable{
      * llave primaria de la factura
      */
     @Id
-    @Column(name="id_factura", unique=true)
+    @Column(name="id_factura")
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     /**
      * fecha de la factura
      */
-    @Column(name="fecha_factura", unique=false)
+    @Column(name="fecha_factura")
     @Temporal(TemporalType.DATE)
     private Date fecha;
     /**
      * valor total de la factura
      */
-    @Column(name="valor_total_factura", unique=false)
+    @Column(name="valor_total_factura")
     private Long valorTotal;
     /**
      * llave foranea de la factura al metodo de pago

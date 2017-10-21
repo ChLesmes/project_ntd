@@ -20,7 +20,6 @@ public class ProveedorEntity {
      * llave primaria del proveedor
      */
     @Id
-    @Column(name="id_proveedor", unique=true)
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     /**

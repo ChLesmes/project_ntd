@@ -11,8 +11,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * DTO para el mapeo objeto relacional de la entidad Carrito
  *
- * @author Dairo
+ * @author Dairo, Fabian, Cristian
+ * 
  */
 public class CarritoDTO {
     
@@ -20,6 +22,11 @@ public class CarritoDTO {
     
     private FacturaEntity factura;
 
+    /**
+     * Constructor
+     *
+     * @param carrito
+     */
     public CarritoDTO(CarritoEntity carrito) {
         this.id = carrito.getId();
         this.factura = carrito.getFactura();
@@ -41,7 +48,11 @@ public class CarritoDTO {
     }
     
     
-    
+    /**
+     * Metodos get y est de la entidad Carrito
+     *
+     * @return
+     */
     public Long getId() {
         return id;
     }

@@ -21,8 +21,9 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
 /**
- *
- * @author Dairo
+ * 
+ * @author Dairo, Fabian, Cristian
+ * 
  */
 @Stateless
 @Path("co.konrad.project1.ntd.entities.clienteentity")

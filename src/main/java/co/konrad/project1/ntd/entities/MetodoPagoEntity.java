@@ -22,7 +22,7 @@ public class MetodoPagoEntity implements Serializable{
      * llave primaria del metodo de pago
      */
     @Id
-    @Column(name="id_metodo_pago", unique=true)
+    @Column(name="id_metodo_pago")
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     /**

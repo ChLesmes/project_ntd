@@ -10,8 +10,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * DTO para el mapeo objeto relacional de la entidad Proveedor
  *
- * @author Dairo
+ * @author Dairo, Fabian, Cristian
+ * 
  */
 public class ProveedorDTO {
     
@@ -25,6 +27,12 @@ public class ProveedorDTO {
     
     private String email;
 
+    
+    /**
+     * Constructor
+     *
+     * @param proveedor
+     */
     public ProveedorDTO(ProveedorEntity proveedor) {
         this.id = proveedor.getId();
         this.nombre = proveedor.getNombre();
@@ -54,6 +62,11 @@ public class ProveedorDTO {
     }
     
 
+    /**
+     * Metodos get y est de la entidad Proveedor
+     *
+     * @return
+     */
     public Long getId() {
         return id;
     }

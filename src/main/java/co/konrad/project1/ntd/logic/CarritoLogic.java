@@ -12,8 +12,9 @@ import javax.ejb.Stateless;
 import javax.inject.Inject;
 
 /**
- *
- * @author Dairo
+ * 
+ * @author Dairo, Fabian, Cristian
+ * 
  */
 
 @Stateless

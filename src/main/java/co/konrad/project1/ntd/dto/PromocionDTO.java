@@ -11,8 +11,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * DTO para el mapeo objeto relacional de la entidad Promocion
  *
- * @author Dairo
+ * @author Dairo, Fabian, Cristian
+ * 
  */
 public class PromocionDTO {
     
@@ -24,6 +26,12 @@ public class PromocionDTO {
     
     private ProductoEntity producto;
 
+    
+    /**
+     * Constructor
+     *
+     * @param promocion
+     */
     public PromocionDTO(PromocionEntity promocion) {
         this.id = promocion.getId();
         this.nombre = promocion.getNombre();
@@ -51,7 +59,11 @@ public class PromocionDTO {
     }
     
     
-    
+    /**
+     * Metodos get y est de la entidad Promocion
+     *
+     * @return
+     */
 
     public Long getId() {
         return id;

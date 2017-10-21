@@ -22,7 +22,7 @@ public class EnvioEntity implements Serializable{
      * llave primaria del envio
      */
     @Id
-    @Column(name="id_envio", unique=true)
+    @Column(name="id_envio")
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     /**
