@@ -6,13 +6,14 @@
 package co.konrad.project1.ntd.resources;
 
 import java.util.Set;
+import javax.ws.rs.ApplicationPath;
 import javax.ws.rs.core.Application;
 
 /**
  *
  * @author Dairo
  */
-@javax.ws.rs.ApplicationPath("webresources")
+@ApplicationPath("/api")
 public class ApplicationConfig extends Application {
 
     @Override
